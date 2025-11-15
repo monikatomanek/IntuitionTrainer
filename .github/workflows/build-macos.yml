@@ -27,7 +27,7 @@ jobs:
           pyinstaller installer.py --onefile --windowed --add-data "trainer.jpg:."
 
       - name: Upload .dmg artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: IntuitionTrainer-macOS
           path: dist/*.app
